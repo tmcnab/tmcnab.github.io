@@ -55,6 +55,7 @@
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="about.html" />
     <Content Include="img\grey.gif" />
     <Content Include="img\zoidberg-hooray.jpeg" />
     <Content Include="js\index.min.js">
