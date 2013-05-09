@@ -31,3 +31,9 @@ article p {
 [data-language] {
   overflow-x: auto;
 }
+blockquote p {
+  font-size: 13px;
+}
+.lazy {
+  display: none;
+}

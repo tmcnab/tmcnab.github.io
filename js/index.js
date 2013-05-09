@@ -36,8 +36,7 @@ function ordinal_suffix_of(i) {
     return i + "th";
 }
 
-$('article').each(function (i, item)
-{
+$('article').each(function (i, item) {
     var uri = $(this).data('url');
     var components = uri.split('/');
     var pubdate = components[1] + '-' + components[2] + '-' + components[3];
@@ -45,7 +44,7 @@ $('article').each(function (i, item)
     var permalink = '#' + uri.replace('blog/', '').replace('.html', '');
 
     // Set id of article
-    $(this).attr('id', permalink.replace('#',''));
+    $(this).attr('id', permalink.replace('#', ''));
 
     // Create article content + header
     var header = $('<header>');
@@ -77,4 +76,11 @@ $('article').each(function (i, item)
     $(this).load($(this).data('url'), function () {
         $(this).prepend(header);
     });
+});
+
+
+$(document).ready(function () {
+    $("img.lazy").show().lazyload({
+        failure_limit: 20
+    }).removeClass("lazy");
 });

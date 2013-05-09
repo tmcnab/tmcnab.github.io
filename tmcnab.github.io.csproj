@@ -55,6 +55,8 @@
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="img\grey.gif" />
+    <Content Include="img\zoidberg-hooray.jpeg" />
     <Content Include="js\index.min.js">
       <DependentUpon>index.js</DependentUpon>
     </Content>
@@ -73,6 +75,8 @@
     </Content>
     <Content Include="log\2011\03\05\Introducing_MuDB.html" />
     <Content Include="log\2011\04\22\FlightGear_and_iOS.html" />
+    <Content Include="log\2011\08\23\I_Did_a_Thing.html" />
+    <Content Include="log\2011\10\14\Anarchism.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="params.json" />
@@ -91,6 +95,12 @@
     <Content Include="js\index.min.js.map">
       <DependentUpon>index.js</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="files\pdf\ob-flyer.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="files\pdf\iphone-sensor-platforms.pdf" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
 </Project>
