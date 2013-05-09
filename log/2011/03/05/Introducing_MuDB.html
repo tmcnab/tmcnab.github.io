@@ -1,0 +1,69 @@
+﻿<blockquote>
+    <p>Databases can be awesome. They can also not be.</p>
+    <p>Embedded programming can be awesome. It can also not be.</p>
+    <small><cite>A Made Up Koan</cite></small>
+</blockquote>
+<p>As a quick proof-of-concept, I decided to see how far I could go in 
+   designing an embedded, code-first database that can be used with my 
+   Netduino. Enter Mu Database, a simple object-oriented database to help you
+   manage your data. Begin overview-by-example!</p>
+<p>The example included with the source is for use with Secret Lab's 
+   <a href="http://netduino.com/">Netduino</a>, and also requires 
+   <a href="http://microlinq.codeplex.com/">MicroLinq</a>. After creating a 
+   new Netduino application and importing the required references, define 
+   your table's model with a simple class:</p>
+<pre data-language="cs">
+[Serializable]
+public class Product
+{
+    public int Id;
+    public string Name;
+    public float Cost;
+
+    public Product(int id, string name, float cost)
+    {
+        this.Id = id;
+        this.Name = name;
+        this.Cost = cost;
+    }
+
+    public override string ToString()
+    {
+        return "Id:" + this.Id.ToString() + 
+               ", Name: " + this.Name + 
+               ", Cost: $" + this.Cost;
+    }
+}
+</pre>
+<p>In MuDB, public fields correspond to table columns. Notice that the class 
+   is also marked Serializable. To start the process, create a new instance
+   of MuDB and insert a new table into it by passing the type of our model 
+   (<code>Product</code>):</p>
+<pre data-language="cs">
+Database db = new Database(null);
+var Products = db.Insert(typeof(Product));
+</pre>
+<p>Inserting records into the table:</p>
+<pre data-language="cs">
+Products.Insert(new Product(1, "Apple",  1.50f));
+Products.Insert(new Product(2, "Orange", 1.75f));
+Products.Insert(new Product(3, "Banana", 1.30f));
+</pre>
+<p>Note that attempting to create two tables of the same type, or trying to
+   insert a different type will result in a <code>DatabaseException</code>. 
+   After inserting our data, we can query it using MicroLinq:</p>
+<pre data-language="cs">
+var product = Products.Data.FirstOrDefault(
+    p => ((Product)p).Name == "Apple"
+);
+Debug.Print(product.ToString());
+</pre>
+<p>Which yields in the debugger:</p>        
+<pre data-language="cs">
+Id:1, Name: Apple, Cost: $1.5
+</pre>
+<p>So there are a few issues right now, like that it takes up a whole bunch o'
+   memory. You can also serialize/deserialize tables with a caveat: it's not
+   supported by the Netduino firmware. Still, it's not bad for a few hours of
+   coding. You can grab the source at <a href="http://mu.codeplex.com/">Codeplex</a>.
+   If you use it, let me know how you went.</p>

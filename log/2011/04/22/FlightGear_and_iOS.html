@@ -1,0 +1,17 @@
+﻿<p>So I whipped-up a rough flight controller for <a href="http://www.flightgear.org/">FlightGear</a>
+   using <a href="https://code.google.com/p/accelerometer-simulator">Accelerometer-Simulator</a>
+  (AccSim) and Mono. With this bridging application, you can control the roll
+  and pitch of your aircraft using any iOS device that can run AccSim. One 
+  caveat right now is that, at least on my machine, it chugs the system down
+  to one frame per second. I have a feeling that this has something to do with
+  the way FlightGear's internal modelling system runs, or it's because I'm 
+  continually shoving data down it's throat as fast as the socket will allow
+  &hellip; but that's an optimization for another day.</p>
+<p>The provided socket interface to FlightGear is pretty neat, and I could 
+   definitely see creating a native app on the horizon if I thought there was
+   any interest or money in it. Being able to control your autopilot, flight 
+   controls and aircraft systems through an iOS device would be pretty sweet.</p>
+<p>You can grab the solution <a href="http://dl.dropbox.com/u/5869984/Open%20Source/NFGConnector.zip" rel="nofollow">here</a>
+   (<a href="http://opensource.org/licenses/MIT" rel="license">MIT Licence</a>)
+   and Accelerometer-Simulator <a href="http://itunes.apple.com/us/app/accelerometer-simulator/id336476721?mt=8">here</a>
+   (it's free). Read the README.txt file for more information on how to use it.</p>

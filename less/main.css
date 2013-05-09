@@ -22,6 +22,9 @@ article header {
 article header h3 {
   margin-bottom: 0;
 }
+article p {
+  text-align: justify;
+}
 .subheader a {
   margin-right: 5px;
 }

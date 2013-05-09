@@ -55,6 +55,9 @@
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="js\index.min.js">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
     <Content Include="log\2010\03\07\On_Reinventing_the_Wheel.html" />
     <Content Include="log\2011\02\09\DevWorld2010_video.html" />
     <Content Include="log\2011\03\01\Customizing_HTML_Sliders.html" />
@@ -68,6 +71,8 @@
     <Content Include="less\main.min.css">
       <DependentUpon>main.less</DependentUpon>
     </Content>
+    <Content Include="log\2011\03\05\Introducing_MuDB.html" />
+    <Content Include="log\2011\04\22\FlightGear_and_iOS.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="params.json" />
@@ -81,6 +86,11 @@
   <ItemGroup>
     <Folder Include="log\2012\" />
     <Folder Include="log\2013\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\index.min.js.map">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
 </Project>
