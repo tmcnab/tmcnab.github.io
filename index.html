@@ -36,14 +36,17 @@
             </div>
         </div>
     </div>
-    <section class="tab-content" style="height:90%;">
+    <section class="tab-content">
         <section id="Log" class="tab-pane fade active in">
             <div class="row-fluid">
-                <ul class="span4 nav well" id="blog_list">
+                <ul class="span3 nav hidden-phone" id="blog_list" data-spy="affix">
+                    <li class="nav-header">Posts</li>
                 </ul>
-                <div class="span8">
-                    <article data-date="2010-11-15" data-url="blog/2010_11_15_Authorization_Fail.html" data-title="Authorization Fail"></article>
-                    <article data-date="2010-03-07" data-url="blog/2010_03_07_On_Reinventing_The_Wheel.html" data-title="On Reinventing the Wheel"></article>
+                <div class="span8 offset3">
+                    <article data-url="log/2011/03/01/Customizing_HTML_Sliders.html"></article>
+                    <article data-url="log/2011/02/09/DevWorld2010_video.html"></article>
+                    <article data-url="log/2010/11/15/Authorization_Fail.html"></article>
+                    <article data-url="log/2010/03/07/On_Reinventing_the_Wheel.html"></article>
                 </div>
             </div>
         </section>
@@ -90,20 +93,9 @@
             </div>
         </section>
     </section>
-    <footer style="text-align: center;">
-        <a href="https://twitter.com/tjmcnab" target="_blank">
-            <i class="icon-twitter"></i> tjmcnab
-        </a> &middot;
-        <a href="https://github.com/tmcnab" target="_blank">
-            <i class="icon-github"></i> tmcnab
-        </a> &middot;
-        <a href="http://stackoverflow.com/users/556561/huragok" target="_blank">
-            <img src="img/so.svg" style="height:16px" /> huragok
-        </a>
-    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.8.4/jquery.lazyload.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
 </body>
 </html>

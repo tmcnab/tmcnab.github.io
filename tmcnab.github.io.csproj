@@ -55,7 +55,13 @@
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="log\2010\03\07\On_Reinventing_the_Wheel.html" />
+    <Content Include="log\2011\02\09\DevWorld2010_video.html" />
+    <Content Include="log\2011\03\01\Customizing_HTML_Sliders.html" />
+    <Content Include="img\so.svg" />
     <Content Include="index.html" />
+    <Content Include="js\index.js" />
+    <Content Include="js\nonstd.js" />
     <Content Include="less\main.css">
       <DependentUpon>main.less</DependentUpon>
     </Content>
@@ -67,10 +73,14 @@
     <Content Include="params.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="js\" />
+    <Content Include="less\main.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="less\main.less" />
+    <Content Include="log\2010\11\15\Authorization_Fail.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="log\2012\" />
+    <Folder Include="log\2013\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
 </Project>

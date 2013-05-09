@@ -1,8 +1,18 @@
 ﻿$('article').each(function (i, item)
 {
-    var title = $(this).data('title');
-    var pubdate = $(this).data('date');
     var uri = $(this).data('url');
+
+    var components = uri.split('/');
+
+    console.log(components);
+
+    var pubdate = components[1] + '-' + components[2] + '-' + components[3];
+    var title = components[4].replace(/\_/gi, ' ').replace('.html', '');
+
+
+    //var title = $(this).data('title');
+    //var pubdate = $(this).data('date');
+    
     var permalink = '#' + uri.replace('blog/', '').replace('.html', '');
 
     // Set id of article
@@ -11,7 +21,7 @@
     var header = $('<header>');
     header.append($('<h3>').text(title));
 
-    var subheader = $('<span>');
+    var subheader = $('<span>').addClass('subheader');
     subheader.append
     (
         $('<a>')

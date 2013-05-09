@@ -22,3 +22,9 @@ article header {
 article header h3 {
   margin-bottom: 0;
 }
+.subheader a {
+  margin-right: 5px;
+}
+[data-language] {
+  overflow-x: auto;
+}
