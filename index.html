@@ -26,7 +26,7 @@
                 <a class="brand">Tristan McNab</a>
 
                 <div class="nav-collapse collapse">
-                    <ul class="nav">
+                    <ul class="nav pull-right">
                         <li class="active">
                             <a data-toggle="tab" data-target="#Log">Log</a></li>
                         <li><a data-toggle="tab" data-target="#Projects">Projects</a></li>
@@ -36,22 +36,58 @@
             </div>
         </div>
     </div>
-    <section class="tab-content" style="height:85%; overflow-y:scroll">
+    <section class="tab-content" style="height:90%;">
         <section id="Log" class="tab-pane fade active in">
-            a<br />
-            a<br />
-            a<br />
-            a<br />
-            a<br />
-            v
-            a<br />
-            a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+            <div class="row-fluid">
+                <ul class="span4 nav well" id="blog_list">
+                </ul>
+                <div class="span8">
+                    <article data-date="2010-11-15" data-url="blog/2010_11_15_Authorization_Fail.html" data-title="Authorization Fail"></article>
+                    <article data-date="2010-03-07" data-url="blog/2010_03_07_On_Reinventing_The_Wheel.html" data-title="On Reinventing the Wheel"></article>
+                </div>
+            </div>
         </section>
         <section id="Projects" class="tab-pane fade">
-            Projects Page
+            <ul class="thumbnails">
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img data-src="holder.js/300x200" alt="">
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                    </div>
+                </li>
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img data-src="holder.js/300x200" alt="">
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                    </div>
+                </li>
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img data-src="holder.js/300x200" alt="">
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                    </div>
+                </li>
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img data-src="holder.js/300x200" alt="">
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                    </div>
+                </li>
+            </ul>
         </section>
         <section id="About" class="tab-pane fade">
-            About Page
+            <div class="row-fluid">
+                <div class="span3 offset2">
+                    left
+                </div>
+                <div class="span6">
+                    right
+                </div>
+            </div>
         </section>
     </section>
     <footer style="text-align: center;">
@@ -60,9 +96,14 @@
         </a> &middot;
         <a href="https://github.com/tmcnab" target="_blank">
             <i class="icon-github"></i> tmcnab
+        </a> &middot;
+        <a href="http://stackoverflow.com/users/556561/huragok" target="_blank">
+            <img src="img/so.svg" style="height:16px" /> huragok
         </a>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
 </body>
 </html>

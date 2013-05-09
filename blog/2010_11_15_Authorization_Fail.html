@@ -1,0 +1,9 @@
+﻿<section>
+<pre class="prettyprint lang-cs">public static bool IsAuthorized(int id, string username) {
+  if(GetPerson(id) != null)
+    return (username == GetPerson(id).User) ? true : false;
+  return false;
+}
+</pre>
+    <p>Yeah, I know.</p>
+</section>
