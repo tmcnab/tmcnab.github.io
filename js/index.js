@@ -77,10 +77,3 @@ $('article').each(function (i, item) {
         $(this).prepend(header);
     });
 });
-
-
-$(document).ready(function () {
-    $("img.lazy").show().lazyload({
-        failure_limit: 20
-    }).removeClass("lazy");
-});

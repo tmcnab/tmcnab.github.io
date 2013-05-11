@@ -2,9 +2,6 @@
 body {
   height: 100%;
 }
-body {
-  padding-top: 30px;
-}
 a:hover {
   text-decoration: none;
 }
@@ -39,4 +36,37 @@ blockquote p {
 }
 .lazy {
   display: none;
+}
+pre {
+  color: #111;
+  margin-bottom: 20px;
+}
+iframe {
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 20px;
+}
+.nav {
+  text-align: right;
+}
+figure {
+  text-align: center;
+}
+section header:before {
+  content: "» ";
+}
+section header {
+  font-weight: bold;
+  font-size: large;
+  padding-left: 5%;
+}
+dd:before {
+  content: "› ";
+}
+abbr[title] {
+  border-bottom: 1px dotted #888;
+}
+.container-fluid {
+  padding: 0;
 }

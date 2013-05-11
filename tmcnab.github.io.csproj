@@ -57,11 +57,20 @@
   <ItemGroup>
     <Content Include="about.html" />
     <Content Include="img\grey.gif" />
+    <Content Include="img\netmf.jpg" />
     <Content Include="img\zoidberg-hooray.jpeg" />
+    <TypeScriptCompile Include="js\common.ts" />
+    <Content Include="js\common.js">
+      <DependentUpon>common.ts</DependentUpon>
+    </Content>
+    <Content Include="js\common.min.js">
+      <DependentUpon>common.ts</DependentUpon>
+    </Content>
     <Content Include="js\index.min.js">
       <DependentUpon>index.js</DependentUpon>
     </Content>
     <Content Include="log\2010\03\07\On_Reinventing_the_Wheel.html" />
+    <Content Include="log\2010\03\18\DS.NET.html" />
     <Content Include="log\2011\02\09\DevWorld2010_video.html" />
     <Content Include="log\2011\03\01\Customizing_HTML_Sliders.html" />
     <Content Include="img\so.svg" />
@@ -78,6 +87,7 @@
     <Content Include="log\2011\04\22\FlightGear_and_iOS.html" />
     <Content Include="log\2011\08\23\I_Did_a_Thing.html" />
     <Content Include="log\2011\10\14\Anarchism.html" />
+    <Content Include="d\jquery.d.ts" />
     <Content Include="services.html" />
     <Content Include="work.html" />
   </ItemGroup>
@@ -104,6 +114,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="files\pdf\iphone-sensor-platforms.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\common.js.map">
+      <DependentUpon>common.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
 </Project>
