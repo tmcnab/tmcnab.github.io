@@ -58,6 +58,7 @@
     <Content Include="about.html" />
     <Content Include="galleries\occupy-brisbane.html" />
     <Content Include="img\dw2010cover.jpg" />
+    <Content Include="img\farnsworth.jpg" />
     <Content Include="img\grey.gif" />
     <Content Include="img\netduino_overhead.gif" />
     <Content Include="img\netmf.jpg" />
@@ -87,6 +88,7 @@
     <Content Include="log\2010\03\07\On_Reinventing_the_Wheel.html" />
     <Content Include="log\2010\03\18\DS.NET.html" />
     <Content Include="log\2010\08\12\Netduino.html" />
+    <Content Include="log\2010\09\13\Good_news_everyone!.html" />
     <Content Include="log\2011\02\09\DevWorld2010_video.html" />
     <Content Include="log\2011\03\01\Customizing_HTML_Sliders.html" />
     <Content Include="img\so.svg" />
@@ -101,10 +103,13 @@
     </Content>
     <Content Include="log\2011\03\05\Introducing_MuDB.html" />
     <Content Include="log\2011\04\22\FlightGear_and_iOS.html" />
+    <Content Include="log\2011\06\01\Well,_here_we_are.html" />
+    <Content Include="log\2011\06\06\Product_Announcement_-_Processing_for_iOS.html" />
     <Content Include="log\2011\08\23\I_Did_a_Thing.html" />
     <Content Include="log\2011\10\14\Anarchism.html" />
     <Content Include="d\jquery.d.ts" />
     <Content Include="log\2011\10\15\Occupy_Brisbane.html" />
+    <Content Include="log\2012\09\29\Pareto_CMS.html" />
     <Content Include="services.html" />
     <Content Include="work.html" />
   </ItemGroup>
@@ -118,7 +123,6 @@
     <Content Include="log\2010\11\15\Authorization_Fail.html" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="log\2012\" />
     <Folder Include="log\2013\" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="log\2010\09\22\Touchdown!.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="files\video\processing_for_ios.mp4" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
 </Project>
