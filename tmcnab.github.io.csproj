@@ -56,9 +56,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="about.html" />
+    <Content Include="galleries\occupy-brisbane.html" />
     <Content Include="img\dw2010cover.jpg" />
     <Content Include="img\grey.gif" />
     <Content Include="img\netmf.jpg" />
+    <Content Include="img\occupy_brisbane\img_0021.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0022.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0023.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0024.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0026.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0028.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0030.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0031.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0033.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0034.jpeg" />
+    <Content Include="img\occupy_brisbane\img_0035.jpeg" />
     <Content Include="img\zoidberg-hooray.jpeg" />
     <TypeScriptCompile Include="js\common.ts" />
     <Content Include="js\common.js">
@@ -89,6 +101,7 @@
     <Content Include="log\2011\08\23\I_Did_a_Thing.html" />
     <Content Include="log\2011\10\14\Anarchism.html" />
     <Content Include="d\jquery.d.ts" />
+    <Content Include="log\2011\10\15\Occupy_Brisbane.html" />
     <Content Include="services.html" />
     <Content Include="work.html" />
   </ItemGroup>
