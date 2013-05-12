@@ -68,7 +68,7 @@ $('article').each(function (i, item) {
 
     subheader.append($('<time>').attr('pubdate', 'pubdate').html(pubdateAsText));
     header.append(subheader);
-    $('#blog_list').append($('<li>').append(
+    $('#nav_list').append($('<li>').append(
         $('<a>').attr('href', permalink).text(title)
     ));
 
