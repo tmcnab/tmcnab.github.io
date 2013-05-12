@@ -59,6 +59,7 @@
     <Content Include="galleries\occupy-brisbane.html" />
     <Content Include="img\dw2010cover.jpg" />
     <Content Include="img\grey.gif" />
+    <Content Include="img\netduino_overhead.gif" />
     <Content Include="img\netmf.jpg" />
     <Content Include="img\occupy_brisbane\img_0021.jpeg" />
     <Content Include="img\occupy_brisbane\img_0022.jpeg" />
@@ -71,6 +72,7 @@
     <Content Include="img\occupy_brisbane\img_0033.jpeg" />
     <Content Include="img\occupy_brisbane\img_0034.jpeg" />
     <Content Include="img\occupy_brisbane\img_0035.jpeg" />
+    <Content Include="img\touchdown.jpg" />
     <Content Include="img\zoidberg-hooray.jpeg" />
     <TypeScriptCompile Include="js\common.ts" />
     <Content Include="js\common.js">
@@ -84,6 +86,7 @@
     </Content>
     <Content Include="log\2010\03\07\On_Reinventing_the_Wheel.html" />
     <Content Include="log\2010\03\18\DS.NET.html" />
+    <Content Include="log\2010\08\12\Netduino.html" />
     <Content Include="log\2011\02\09\DevWorld2010_video.html" />
     <Content Include="log\2011\03\01\Customizing_HTML_Sliders.html" />
     <Content Include="img\so.svg" />
@@ -139,6 +142,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="files\video\devworld2010.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log\2010\09\22\Touchdown!.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
 </Project>
