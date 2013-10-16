@@ -1,5 +1,0 @@
-C:\Users\Tristan McNab\Projects\tmcnab.github.io\obj\Debug\tmcnab.github.io.csprojResolveAssemblyReference.cache
-C:\Users\Tristan McNab\Projects\tmcnab.github.io\obj\Debug\tmcnab.github.io.dll
-C:\Users\Tristan McNab\Projects\tmcnab.github.io\obj\Debug\tmcnab.github.io.pdb
-C:\Users\Tristan McNab\Projects\tmcnab.github.io\bin\tmcnab.github.io.dll
-C:\Users\Tristan McNab\Projects\tmcnab.github.io\bin\tmcnab.github.io.pdb
