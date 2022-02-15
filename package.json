@@ -1,0 +1,67 @@
+{
+    "awards": [],
+    "basics": {
+        "email": "tristan.j.mcnab@gmail.com",
+        "label": "Programmer",
+        "name": "Tristan McNab",
+        "profiles": [
+            {
+                "network": "Twitter",
+                "url": "https://twitter.com/tjmcnab",
+                "username": "tjmcnab"
+            }
+        ],
+        "summary": "A summary of John Doe…",
+        "url": "https://neuromancer.io/"
+    },
+    "certificates": [],
+    "education": [
+        {
+            "area": "Software Development",
+            "courses": [
+                "DB1101 - Basic SQL"
+            ],
+            "endDate": "2013-01-01",
+            "institution": "University",
+            "score": "4.0",
+            "startDate": "2011-01-01",
+            "studyType": "Bachelor",
+            "url": "https://institution.com/"
+        }
+    ],
+    "interests": [],
+    "languages": [],
+    "projects": [],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "summary": "Description…",
+            "url": "https://publication.com"
+        }
+    ],
+    "references": [],
+    "skills": [],
+    "volunteer": [],
+    "work": [{
+        "endDate": null,
+        "name": "Tripleseat",
+        "position": "Senior Frontend Developer",
+        "startDate": null,
+        "summary": "",
+        "url": ""
+    },
+        {
+            "endDate": "2014-01-01",
+            "highlights": [
+                "Started the company"
+            ],
+            "name": "Company",
+            "position": "President",
+            "startDate": "2013-01-01",
+            "summary": "Description…",
+            "url": "https://company.com"
+        }
+    ]
+}
