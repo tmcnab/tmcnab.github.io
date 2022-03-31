@@ -1,0 +1,38 @@
+:root {
+	--light-color: #ddd;
+	--dark-color: #222;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+#__next {
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+	html, body {
+		background-color: var(--light-color);
+		color: var(--dark-color)
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	html, body {
+		background-color: var(--dark-color);
+		color: var(--light-color);
+	}
+
+	a[href], a[href]:visited, a[href]:hover, a[href]:active { 
+		color: color-mix(in srgb, blue 50%, var(--light-color));
+		font-weight: bold;
+	}
+}
