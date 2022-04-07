@@ -1,0 +1,18 @@
+import Article from '../../../components/Article'
+
+export const meta = {
+    date: null,
+    tags: [],
+    title: 'Rebuild',
+}
+
+It's been a long time since I've written anything in my weblog. With excuses
+like "it's been too long since the last entry", or "I'm just some asshole on
+the internet now, who would listen to what I have to say", or the most 
+outlandish one: "I need to rewrite the thing from scratch and start anew". 
+
+So that's what I'm doing here. I've rebuilt the entire site from scratch using
+[next.js](nextjs.org), [typescript](typescriptlang.org) and [mdx](mdxjs.com).
+
+
+export default ({ children }) => <Article meta={meta}>{children}</Article>

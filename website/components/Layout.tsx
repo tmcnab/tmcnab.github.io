@@ -13,13 +13,17 @@ export default function Layout({ children, title }: { children: ReactNode, title
 			<Flex justifyContent="center">
 				<Container>
 					<Flex alignItems='center' as='header' flexDirection='row' justifyContent='space-between'>
-						<h1>neuromancer.io</h1>
-						<Flex as='nav'>
-							<Link href='/'>Index</Link>
-							<Link href='/about'>About</Link>
+						<h1>
+							<Link href='/'>web.log</Link>
+						</h1>
+						<Flex alignItems='center' justifyContent='center'>
+							<form action='/' method='get' >
+									<input placeholder='Search' type='search' />
+									<button type='submit'>GO</button>
+							</form>
 						</Flex>
 					</Flex>
-					<Flex as='main' justifyContent='center'>
+					<Flex as='main' flexDirection='column' justifyContent='center'>
 						{children}
 					</Flex>
 				</Container>

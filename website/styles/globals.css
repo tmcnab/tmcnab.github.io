@@ -1,12 +1,21 @@
 :root {
-	--light-color: #ddd;
-	--dark-color: #222;
+	--base-font-size: 16px;
+	--dark-color: #000000;
+	--highlight-color-dark: #F3E600;
+	--highlight-color-light: #FF003C;
+	--light-color: #FFFFFF;
+}
+
+* {
+	font-weight: 100;
+	font-family: sans-serif;
+	line-height: 1.5rem;
 }
 
 html, body {
+	font-size: var(--base-font-size);
 	margin: 0;
 	padding: 0;
-	font-size: 18px;
 }
 
 #__next {
@@ -15,13 +24,39 @@ html, body {
 }
 
 a {
+	font-weight: 500;
 	text-decoration: none;
+}
+
+header h1 a {
+	font-family: monospace !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+button, input {
+	border-style: solid;
+	border-width: 1px;
+	outline: none;
+	font-size: var(--base-font-size);
+	font-family: monospace;
 }
 
 @media (prefers-color-scheme: light) {
 	html, body {
 		background-color: var(--light-color);
 		color: var(--dark-color)
+	}
+
+	a[href], a[href]:visited, a[href]:hover, a[href]:active { 
+		color: var(--highlight-color-light);
+	}
+
+	input {
+		background-color: var(--light-color);
+		color: var(--dark-color);
 	}
 }
 
@@ -32,7 +67,17 @@ a {
 	}
 
 	a[href], a[href]:visited, a[href]:hover, a[href]:active { 
-		color: color-mix(in srgb, blue 50%, var(--light-color));
-		font-weight: bold;
+		color: var(--highlight-color-dark);
+	}
+
+	button, input {
+		background-color: var(--dark-color);
+		border-color: var(--highlight-color-dark);
+		color: var(--highlight-color-dark);
+	}
+
+	.ui-tag {
+		background-color: var(--highlight-color-dark);
+		color: var(--dark-color);
 	}
 }
