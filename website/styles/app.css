@@ -1,0 +1,7 @@
+@import "variables.css";
+@import "overrides.css";
+
+.container {
+    max-width: 800px;
+    width: 100%;    
+}

@@ -1,0 +1,24 @@
+:root {
+	--base-font-size: 16px;
+	--dark-color: #000000;
+	--highlight-color-dark: #F3E600;
+	--highlight-color-light: #FF003C;
+	--light-color: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: var(--dark-color);
+		--fg-color: var(--light-color);
+		--hl-color: var(--highlight-color-dark);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg-color: var(--light-color);
+		--fg-color: var(--dark-color);
+		--hl-color: var(--highlight-color-light);
+	}
+}
+
